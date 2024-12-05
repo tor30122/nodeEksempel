@@ -7,5 +7,5 @@ const PORT = 8000;
 
 // Starte server og be den lytte til PORT
 app.listen(PORT, () => {
-    console.log(`serveren kjører på http://localhost:${PORT}`);
+  console.log(`Serveren kjører på http://localhost:${PORT}`);
 });
