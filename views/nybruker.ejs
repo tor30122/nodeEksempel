@@ -1,18 +1,50 @@
 <!DOCTYPE html>
 <html lang="nb">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ny bruker</title>
 
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
->
-</head>
-<body>
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+  </head>
+  <body>
     <main class="container">
-        <h1>Registrer ny bruker</h1>
+      <h1>Registrer ny bruker</h1>
+
+      <!-- Skjema for registrering-->
+      <form action="/nybruker" method="POST">
+        <fieldset>
+          <label>
+            Navn
+            <input
+              name="navn"
+              placeholder="Navn"
+              required
+            />
+          </label>
+          <label>
+            Epost
+            <input
+              type="email"
+              name="epost"
+              placeholder="Epost"
+            />
+          </label>
+          <label>
+            Telefon
+            <input
+              type="tel"
+              name="telefon"
+              placeholder="Telefon"
+            />
+          </label>
+        </fieldset>
+
+        <input type="submit" value="Registrer" />
+      </form>
     </main>
-</body>
+  </body>
 </html>
