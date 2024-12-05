@@ -13,6 +13,11 @@ app.get(`/`, (req, res) => {
     res.render(`index`);
 });
 
+// Lag en rute til /nybruker
+app.get(`/nybruker`, (req,res) => {
+    res.render(`nybruker`);
+});
+
 // Starte server og be den lytte til PORT
 app.listen(PORT, () => {
   console.log(`Serveren kjører på http://localhost:${PORT}`);
